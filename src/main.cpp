@@ -26,7 +26,6 @@ void getPrime(int size) {
 	if (my_pool->getIndex() == -1) {
 		int first_range = range / (sub_process_number + 1) + range % (sub_process_number + 1);
 		vector<bool> nums(first_range + 1, true);
-		cout << first_range << "daixao"<< endl;
 		for (int i = 2; i < nums.size(); ++i) {
 			int loc = i;
 			if (nums[loc]) {
